@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "Static Pages" do
   
-  let(:base_title) { "MicroBlogger |" } 
+  let(:base_title) { "MicroBlogger Sample Application |" } 
   
   describe "Home page" do
     it "Should the right title" do
@@ -27,7 +27,7 @@ describe "Static Pages" do
   describe "About Page" do
     it "should have the right title and h1 'About Us'" do
       visit '/static_pages/about'
-      page.should have_selector('title', :text=>"| About Us")
+      page.should have_selector('title', :text=>"#{base_title} About Us")
       page.should have_selector('h1', :text=>"About Us")
     end
   end
