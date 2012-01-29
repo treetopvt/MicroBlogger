@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.0'
+gem 'bcrypt-ruby', '3.0.1' #for password encryption
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -8,7 +9,8 @@ gem 'rails', '3.2.0'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
-  gem 'guard-rspec'  
+  gem 'guard-rspec'
+  gem 'annotate', '~> 2.4.1.beta'  
 end
 
 
